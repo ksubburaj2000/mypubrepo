@@ -31,7 +31,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./.github/Terraform
+
     steps:
     - name: current branch
 #      run: echo running on branch ${{ github.ref_name }}
@@ -68,7 +68,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./.github/Terraform
+
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
