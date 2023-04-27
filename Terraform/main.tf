@@ -7,3 +7,4 @@ resource "azurerm_resource_group" "target-resource-group" {
     ignore_changes = [tags]
   }
 }
+
