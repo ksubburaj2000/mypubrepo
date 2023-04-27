@@ -4,6 +4,8 @@ on:
     branches:
     - staging
 #    - deploy
+    paths: 
+    - Terraform/**
 #  pull_request:
 #    branches:
 #    - deploy
