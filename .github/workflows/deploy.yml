@@ -3,11 +3,11 @@ on:
   push:
     branches:
 #    - staging
-    - deploy
+    - master
 
 #  pull_request:
 #    branches:
-#    - deploy
+#    - master
 #  workflow_dispatch:
 
 permissions: 
