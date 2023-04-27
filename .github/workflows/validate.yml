@@ -9,9 +9,6 @@ on:
 #    - deploy
 #  workflow_dispatch:
 
-defaults:
-  run:
-    working-directory: 'Terraform'
 
 permissions: 
   contents: read
@@ -34,6 +31,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: 'Terraform'
     steps:
     - name: current branch
 #      run: echo running on branch ${{ github.ref_name }}
@@ -47,7 +45,6 @@ jobs:
       uses: hashicorp/setup-terraform@v2
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-        working-directory: 'Terraform'
 
 # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
@@ -71,6 +68,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: 'Terraform'
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
