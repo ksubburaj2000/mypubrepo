@@ -89,4 +89,4 @@ jobs:
           secret: ${{ github.TOKEN }}
           approvers: ksubburaj2000
         env:
-          TOKEN: ${{ secrets.CUSTOM_PT_TOKEN }}
+          TOKEN: ${{ secrets.CUSTOM_PT2_TOKEN }}
