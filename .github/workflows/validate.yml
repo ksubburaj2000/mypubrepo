@@ -13,6 +13,7 @@ on:
 
 permissions: 
   contents: read
+  issues: write
  
 env:
   CURRENT_BRANCH: ${{ github.head_ref || github.ref_name }}
