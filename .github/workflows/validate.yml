@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./Terraform
+    working-directory: 'Terraform'
 
 permissions: 
   contents: read
@@ -34,7 +34,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: 'Terraform'
     steps:
     - name: current branch
 #      run: echo running on branch ${{ github.ref_name }}
