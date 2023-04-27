@@ -1,5 +1,5 @@
 
-/**
+
 resource "azurerm_resource_group" "target-resource-group" {
   name     = "rg-test001"
   location = "westeurope"
@@ -8,4 +8,3 @@ resource "azurerm_resource_group" "target-resource-group" {
     ignore_changes = [tags]
   }
 }
-*/
